@@ -1,0 +1,26 @@
+﻿namespace WebApplication5.Models
+{
+    public class OrderHeader
+    {
+        public int OrderHeaderId { get; set; }
+        public string? UserId { get; set; }
+        public string? CouponCode { get; set; }
+        public double OrderTotal { get; set; }
+        public double DiscoundTotal  { get; set; }
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
+        public DateTime PickUpDateTime { get; set; }
+        public DateTime OrderTime   { get; set; }
+        public string? Phone { get; set; }
+        public string? Email { get; set; }
+        public string? CardNumber { get; set; }
+        public int CartTotalItems { get; set; }
+        public IEnumerable<OrderDetails>? orderDetails { get; set; }
+        public bool StatusPaid { get; set; }
+
+
+
+
+
+    }
+}
